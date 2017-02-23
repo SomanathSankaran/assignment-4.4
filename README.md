@@ -1,5 +1,17 @@
 # assignment-4.4
+
  QN 1 Write a Java program to copy a file from HDFS to LFS
+ I have used the copytolocal method of Filesystem which take Source path and destination path as its  parameters which is taken from arguments (image:copytolocal)
+ output :1.I Have removed the file "COPYFILE" by using -rm from local system and then checked it by listing thef files 
+2.then executed my jar file "Hadoop jar copytolocal.jar" and then listed the localsystem by -ls and now my copyfile.txt is copied there
+
+QN 2 Explain the importance and usage of the below terms in details
+● DFSInputStream
+● DFSOutputStream
+● FSDataInputStream
+● FSDataOutputStream
+
+
 FSDataInputStream
 • Provides stream (channel) for reading data.
 FSDataInputStream wraps the DataInputStream and implements Seekable, PositionedReadable interfaces which provide method like getPos(), seek() method to provide Random Access on HDFS file.
