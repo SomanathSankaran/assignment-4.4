@@ -1,4 +1,5 @@
 # assignment-4.4
+ QN 1 Write a Java program to copy a file from HDFS to LFS
 FSDataInputStream
 • Provides stream (channel) for reading data.
 FSDataInputStream wraps the DataInputStream and implements Seekable, PositionedReadable interfaces which provide method like getPos(), seek() method to provide Random Access on HDFS file.
